@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.contenedor{
+ display: flex;
+ flex-direction: column;
+height: 100vh;
+
+
+}
+
+.header{
+    background: linear-gradient(#000,transparent);
+    background-color: #05a;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+
+    
+}
+h1{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 3em;
+    text-shadow: 0 0 5px #fff;
+}
+.nav{
+    background-color: #07a;
+    display: flex;
+    justify-content: end;
+    flex-direction: row-reverse;
+    height: 100px;
+}
+.nav__ul{
+    display: flex;
+    
+    font-size: 1.3em;
+
+}
+.nav__li{
+    list-style:none;
+    padding: 5px 20px;
+    transform: scale(1);
+    transition: transform 1s;
+    
+}
+.nav__li:hover{
+    transform: scale(1.1);
+    text-shadow: 0 0 3px #000;
+}
+.nav__a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transform: scale(1.9);
+    color:#f001;
+    text-shadow: 0 0 .5px #fff7;
+ 
+}
+.nav__a:hover{
+    color: #900;
+    
+   
+  
+}
+.aside{
+    padding:30px ;
+    background-color: #09c;
+    background-image: url(https://th.bing.com/th/id/R.bb02feb39d9775d5bb9f3e5835142dc5?rik=szfi131EzkZsrw&pid=ImgRaw&r=0);
+   background-size: contain;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,500px);
+   grid-gap: 40px;
+    justify-content: center;
+   overflow-x: none;
+   overflow-y:scroll;
+    
+
+
+}
+.aside__item{
+    text-align: center;
+   
+    transform:scale(1)
+    
+    
+}
+.aside__img{
+   
+    transition: width .2s;
+    border-radius: 10px;
+   width: 300px;
+   height: 300px;
+   object-fit:cover;
+   transition: width .2s;
+}
+.aside__item:active >.aside__img{
+ 
+  max-width:100%;
+  height: auto;
+ 
+    
+}
+
+.aside__iten-text{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+.footer{
+    background-color: #05a;
+    display: flex;
+   background: linear-gradient(to top,#000,#05a);
+    padding: 10px 0;
+    
+}
+.footer__p{
+    font-size: 1.4em;
+    color: #fff;
+    text-transform: capitalize;
+   
+}
+.caja_container{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    
+
+}
+.caja{
+    width: 75px;
+    height: 100px;
+    background-color: #333;
+    margin: 5px;
+}
